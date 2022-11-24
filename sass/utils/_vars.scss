@@ -1,0 +1,18 @@
+$colors: (
+  "background-primary": #e5e5e5,
+  "background-secondary": #2f303a,
+  "background-tertiary": #f5f4fa,
+  "background-quaternary": #ffffff,
+  "button-primary": #2196f3,
+  "logo-primary": #000000,
+  "label-image": rgba(47, 48, 58, 0.8),
+  "font-header": #212121,
+  "font-text": #757575,
+  "font-footer-contact": rgba(255, 255, 255, 0.6),
+  "border": #ececec,
+  "icon-inert": #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

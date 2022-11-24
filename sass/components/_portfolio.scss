@@ -1,0 +1,143 @@
+@import "./../utils/vars.scss";
+
+.portfolio {
+  background-color: white;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.projects {
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &__description {
+    padding-left: 24px;
+    border: 1px solid #eeeeee;
+    border-top: 0;
+    flex: 1;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    padding-top: 20px;
+  }
+
+  &__type {
+    font-size: 16px;
+    line-height: 1.875;
+    padding-bottom: 20px;
+  }
+}
+
+.projects__item {
+  width: calc(100%);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  & > a:focus & {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  & > a {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+}
+
+.thumb {
+  position: relative;
+  width: 100%;
+  height: 294px;
+  overflow: hidden;
+
+  &__image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    &--basketball {
+      display: block;
+      object-fit: cover;
+      object-position: 50% 15%;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 45px;
+
+    padding-top: 49px;
+
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: white;
+
+    transition-property: transform;
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover > &__label {
+    transform: translateY(-100%);
+  }
+}
+
+@media (min-width: 481px) {
+  .filters {
+    justify-content: center;
+    padding-bottom: 14px;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+
+    &__item {
+      width: calc(50% - 15px);
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .filters {
+    padding-top: 94px;
+    padding-bottom: 34px;
+  }
+
+  .projects {
+    padding-bottom: 94px;
+
+    &__item {
+      width: calc((100% / 3) - 20px);
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import "./../utils/vars.scss";
+
+.js-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-150%);
+  transition: transform 1s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.is-open {
+  transform: translateX(0);
+}
+
+.js-close-menu,
+.js-open-menu {
+  cursor: pointer;
+}
+
+.js-close-menu {
+  position: absolute;
+  background-color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 15px;
+  transition-property: fill;
+  transition: 100ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    & .js-close-menu__icon {
+      fill: getColor("button-primary");
+    }
+  }
+}
+
+.js-close-menu__icon {
+  width: 18px;
+  height: 18px;
+  fill: getColor("font-header");
+}
+
+.mobile-menu {
+  padding-top: 48px;
+  padding-left: 40px;
+
+  &__link {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: getColor("font-header");
+
+    &--active {
+      color: getColor("button-primary");
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.js-menu-container__bottom {
+  padding-left: 40px;
+}
+
+.mobile-contact-list {
+  margin-bottom: 64px;
+
+  &__link {
+    &--phone {
+      color: getColor("button-primary");
+      font-size: 34px;
+
+      line-height: 40px;
+    }
+
+    &--phone {
+      font-size: 24px;
+
+      line-height: 28px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.js-menu-container__social-media {
+  margin-bottom: 48px;
+}
+
+.js-menu-container__link {
+  color: getColor("button-primary");
+}

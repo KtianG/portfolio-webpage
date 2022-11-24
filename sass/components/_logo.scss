@@ -1,0 +1,33 @@
+@import "./../utils/vars.scss";
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+
+  &__Web {
+    color: getColor("button-primary");
+  }
+}
+
+.logo--header {
+  color: getColor("logo-primary");
+}
+
+.logo--footer {
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .logo {
+    font-size: 26px;
+  }
+
+  .logo--footer {
+    text-align: left;
+  }
+}

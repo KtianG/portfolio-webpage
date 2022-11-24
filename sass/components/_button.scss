@@ -1,0 +1,130 @@
+@import "./../utils/vars.scss";
+
+.button {
+  font-family: inherit;
+  font-size: 1em;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: getColor("button-primary");
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  width: 200px;
+  height: 50px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.banner__button {
+  @extend .button;
+
+  text-align: center;
+  margin: 0 auto;
+}
+
+.subscribe__button {
+  @extend .button;
+
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 12px;
+  bottom: 0;
+  position: 0, 50%;
+
+  &-text {
+    padding-left: 14px;
+  }
+
+  &-icon {
+    fill: white;
+    margin-left: 24px;
+  }
+}
+
+.modal__button-submit {
+  @extend .button;
+  margin-top: 30px;
+  text-align: center;
+
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  &:hover,
+  &:focus {
+    background-color: getColor("background-tertiary");
+    color: getColor("font-header");
+  }
+}
+
+.modal__button-close {
+  position: absolute;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  transition-property: border-color, fill;
+  transition: 100ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: getColor("button-primary");
+
+    & .modal__icon-close {
+      fill: getColor("button-primary");
+    }
+  }
+}
+
+.modal__icon-close {
+  width: 18px;
+  height: 18px;
+  margin-top: 6px;
+  fill: getColor("font-header");
+}
+
+.filters__button {
+  font-family: inherit;
+  background-color: getColor("background-tertiary");
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: getColor("font-header");
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:not(last-child) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: getColor("button-primary");
+    color: white;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+@media (min-width: 769px) {
+  .subscribe__button {
+    align-self: flex-end;
+  }
+}

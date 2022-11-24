@@ -1,0 +1,49 @@
+@import "./../utils/vars.scss";
+
+.about-us {
+  background-color: getColor("background-quaternary");
+  padding-bottom: 94px;
+}
+
+.about-us__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us__item {
+  position: relative;
+  width: calc(33% - 20px);
+}
+
+.about-us__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about-us__label {
+  position: absolute;
+  width: 100%;
+  background-color: getColor("label-image");
+  justify-content: center;
+
+  bottom: 0;
+  left: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0 auto;
+
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 769px) {
+  .about-us {
+    display: none;
+  }
+}

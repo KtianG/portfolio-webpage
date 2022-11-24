@@ -1,0 +1,113 @@
+@import "./../utils/vars.scss";
+
+.team {
+  background-color: getColor("background-tertiary");
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  &__job-title {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  &__photo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.team__item {
+  background-color: getColor("background-quaternary");
+  width: calc(100% - 30px);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  min-width: 200px;
+
+  margin: auto;
+
+  a:focus {
+    background-color: getColor("button-primary");
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .team__icon {
+      fill: #ffffff;
+    }
+  }
+}
+
+.team__icons-list {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin: 0 auto;
+  margin-top: 16px;
+  padding-bottom: 18px;
+}
+
+.team__icons-item {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition-property: background-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: getColor("button-primary");
+
+    .team__icon {
+      fill: #ffffff;
+    }
+  }
+}
+
+.team__icon {
+  margin-top: 12px;
+  fill: getColor("icon-inert");
+  transition-property: fill;
+  transition: 25ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 481px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .team__item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: 769px) {
+  .team__list {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .team__item {
+    max-width: 270px;
+  }
+}
