@@ -42,6 +42,11 @@ h2 {
   margin: 0 auto;
 }
 
+.in_progress {
+  display: none;
+  visibility: hidden;
+}
+
 @media (min-width: 1201px) {
   .container {
     width: 1200px;
@@ -203,7 +208,7 @@ h2 {
     width: 138px;
   }
   .menu,
-.page-header__right-side {
+  .page-header__right-side {
     width: 100%;
   }
 }
@@ -354,6 +359,9 @@ h2 {
 .banner__button {
   text-align: center;
   margin: 0 auto;
+}
+.banner__button:hover {
+  background-color: #1664a3;
 }
 
 .subscribe__button {
@@ -616,9 +624,10 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 16px;
+  margin-top: 16px;
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-top: 16px;
+  padding-bottom: 18px;
 }
 
 .team__icons-item {
@@ -1090,8 +1099,7 @@ h2 {
   color: #2196f3;
 }
 .TAA__link:hover, .TAA__link:focus {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .TAA__input {

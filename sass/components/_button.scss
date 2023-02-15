@@ -26,6 +26,10 @@
 
   text-align: center;
   margin: 0 auto;
+
+  &:hover {
+    background-color: getColor("button-darker");
+  }
 }
 
 .subscribe__button {
