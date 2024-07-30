@@ -1,10 +1,14 @@
+// Import the SCSS variables for color definitions
+
 @import "./../utils/vars.scss";
 
+// Main container for the "Advantages" section
 .advantages {
   background-color: white;
   padding: 94px 15px;
 }
 
+// Styling for the list within the "Advantages" section
 .advantages__list {
   h3 {
     text-align: center;
@@ -15,6 +19,7 @@
   }
 }
 
+// Styling for the icons within each item in the "Advantages" section
 .advantages__icon {
   background-color: getColor("background-tertiary");
   width: 100%;
@@ -22,12 +27,14 @@
   margin-bottom: 30px;
 }
 
+// Responsive design for screens 481px wide or smaller
 @media (max-width: 481px) {
   .advantages__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
+// Responsive design for screens between 481px and 768px wide
 @media (min-width: 481px) {
   .advantages__list {
     display: flex;
@@ -45,6 +52,7 @@
   }
 }
 
+// Responsive design for screens 769px wide or larger
 @media (min-width: 769px) {
   .advantages__list {
     display: flex;

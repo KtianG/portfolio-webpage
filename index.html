@@ -1,17 +1,26 @@
 <!DOCTYPE html>
+<!-- Specify the document type to HTML5 -->
+
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- Ensure compatibility with Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Set the viewport to ensure the site is responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Normalizator -->
+    <!-- Normalize CSS to make browsers render all elements more consistently -->
     <link
       rel="stylesheet"
       href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"
     />
 
+    <!-- Link to the main CSS file -->
     <link rel="stylesheet" href="./css/main.min.css" />
+
+    <!-- Link to Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -24,11 +33,13 @@
     <header class="page-header">
       <div class="container">
         <div class="flex-container">
+          <!-- Right side of the header with logo and navigation menu -->
           <div class="page-header__right-side">
+            <!-- Website logo linking to the homepage -->
             <a href="./index.html" class="logo logo--header"
               ><span class="logo__Web">Web</span>Studio</a
             >
-
+            <!-- Navigation menu -->
             <ul class="menu">
               <li class="menu__item menu__item--active">
                 <a href="./index.html" class="menu__link menu__link--active"
@@ -46,9 +57,11 @@
             </ul>
           </div>
 
+          <!-- Contact information in the header -->
           <div class="contact">
             <ul class="contact-list">
               <li class="contact-list__item">
+                <!-- Email link with icon -->
                 <a href="mailto:info@devstudio.com" class="contact-list__link">
                   <svg
                     class="contact-list__icon contact-list__icon--envelope"
@@ -61,6 +74,7 @@
                 >
               </li>
               <li class="header-contact-item">
+                <!-- Phone link with icon -->
                 <a href="tel:+48 111 111 111" class="contact-list__link">
                   <svg
                     class="contact-list__icon contact-list__icon--smartphone"
@@ -74,6 +88,8 @@
               </li>
             </ul>
           </div>
+
+          <!-- Mobile menu button -->
           <button type="button" class="js-open-menu" openMenuBtn>
             <svg class="js-open-menu__icon">
               <use href="./images/icons.svg#mobile-menu"></use>
@@ -101,6 +117,7 @@
       <section class="advantages">
         <div class="container">
           <ul class="advantages__list">
+            <!-- List items with icon and text -->
             <li class="advantages__item">
               <svg
                 class="advantages__icon"
@@ -173,6 +190,7 @@
         <div class="container">
           <h2>Czym się zajmujemy</h2>
           <ul class="about-us__list">
+            <!-- About us items with images and labels -->
             <li class="about-us__item">
               <img
                 class="about-us__image"
@@ -211,6 +229,7 @@
         <div class="container">
           <h2>Nasz zespół</h2>
           <ul class="team__list">
+            <!-- Team member items with photos and social links -->
             <li class="team__item">
               <img
                 class="team__photo"
@@ -406,6 +425,7 @@
           <h2 class="our-clients__title">Nasi klienci</h2>
 
           <ul class="our-clients__list">
+            <!-- Client logos with links -->
             <li class="our-clients__item">
               <a href="./index.html">
                 <svg class="our-clients__logo" width="106px" height="60px">
@@ -670,6 +690,7 @@
       </div>
     </div>
 
+    <!-- Include JavaScript files -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

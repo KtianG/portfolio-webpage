@@ -1,19 +1,33 @@
+// Define a map of color variables used throughout the stylesheets.
+// This map allows for easy color management and consistent design updates.
+
 $colors: (
+  // Background colors used in different sections of the website
   "background-primary": #e5e5e5,
   "background-secondary": #2f303a,
   "background-tertiary": #f5f4fa,
   "background-quaternary": #ffffff,
+  // Button colors for different states
   "button-primary": #2196f3,
   "button-darker": #1664a3,
+
+  // Logo color
   "logo-primary": #000000,
+
+  // Label colors and text colors for different UI elements
   "label-image": rgba(47, 48, 58, 0.8),
   "font-header": #212121,
   "font-text": #757575,
   "font-footer-contact": rgba(255, 255, 255, 0.6),
+  // Border color used for various elements
   "border": #ececec,
-  "icon-inert": #afb1b8,
+
+  // Icon color when inactive or in less prominent states
+  "icon-inert": #afb1b8
 );
 
+// SCSS function to retrieve color values from the $colors map.
+// This function takes a color key as input and returns the corresponding color value.
 @function getColor($key) {
   @return map-get($colors, $key);
 }

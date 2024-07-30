@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    <!-- Character encoding and viewport settings for responsiveness -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Normalizator -->
+    <!-- Importing modern-normalize for consistent styling across browsers -->
     <link
       rel="stylesheet"
       href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"
     />
 
+    <!-- Main stylesheet for custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
 
+    <!-- Google Fonts for typography -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -25,12 +29,14 @@
     <header class="page-header">
       <div class="container">
         <div class="flex-container">
+          <!-- Header content with logo and navigation -->
           <div class="page-header__right-side">
             <a href="./index.html" class="logo logo--header"
               ><span class="logo__Web">Web</span>Studio</a
             >
 
             <ul class="menu">
+              <!-- Navigation links -->
               <li class="menu__item">
                 <a href="./index.html" class="menu__link">Agencja</a>
               </li>
@@ -48,6 +54,7 @@
           </div>
 
           <div class="contact">
+            <!-- Contact information -->
             <ul class="contact-list">
               <li class="contact-list__item">
                 <a href="mailto:info@devstudio.com" class="contact-list__link">
@@ -75,6 +82,7 @@
               </li>
             </ul>
           </div>
+          <!-- Mobile menu button -->
           <button type="button" class="js-open-menu" openMenuBtn>
             <svg class="js-open-menu__icon">
               <use href="./images/icons.svg#mobile-menu"></use>
@@ -104,6 +112,7 @@
           </li>
         </ul>
 
+        <!-- Portfolio projects list -->
         <ul class="projects">
           <li class="projects__item">
             <a href="./index.html">
@@ -338,6 +347,7 @@
     <footer class="page-footer">
       <div class="container">
         <ul class="page-footer__columns-list">
+          <!-- Footer column with logo and address -->
           <li class="page-footer__column">
             <h3 class="logo logo--footer">
               <a href="./index.html"
@@ -362,6 +372,7 @@
             </address>
           </li>
 
+          <!-- Footer column for social media -->
           <li class="page-footer__column">
             <h3 class="page-footer__title">DOŁĄCZ DO NAS</h3>
             <ul class="follow-us">
@@ -399,6 +410,7 @@
             </ul>
           </li>
 
+          <!-- Footer column with newsletter subscription form -->
           <li class="page-footer__column">
             <form class="subscribe">
               <label for="newsletter" class="subscribe__label"
@@ -424,6 +436,7 @@
       </div>
     </footer>
 
+    <!-- Mobile menu container -->
     <div class="js-menu-container">
       <button type="button" class="js-close-menu">
         <svg class="js-close-menu__icon">
@@ -473,6 +486,7 @@
         </div>
       </div>
     </div>
+    <!-- Include JavaScript files -->
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

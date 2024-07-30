@@ -1,27 +1,33 @@
+// Import the SCSS variables for color definitions
 @import "./../utils/vars.scss";
 
+// Main container for the "About Us" section
 .about-us {
   background-color: getColor("background-quaternary");
   padding-bottom: 94px;
 }
 
+// Container for the list of items in the "About Us" section
 .about-us__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+// Styles for each item in the "About Us" list
 .about-us__item {
   position: relative;
   width: calc(33% - 20px);
 }
 
+// Styles for images within the "About Us" section
 .about-us__image {
   display: block;
   width: 100%;
   height: auto;
 }
 
+// Label overlay on images within the "About Us" section
 .about-us__label {
   position: absolute;
   width: 100%;
@@ -42,6 +48,7 @@
   text-transform: uppercase;
 }
 
+// Media query for hiding the "About Us" section on smaller screens
 @media (max-width: 769px) {
   .about-us {
     display: none;
