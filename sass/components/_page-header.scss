@@ -1,11 +1,13 @@
 @import "./../utils/vars.scss";
 
+// Main container for the page header
 .page-header {
   background-color: getColor("background-quaternary");
   border: 1px solid getColor("border");
   display: flex;
 }
 
+// Flex container within the page header
 .flex-container {
   padding: 24px 15px 25px 15px;
   display: flex;
@@ -13,12 +15,14 @@
   justify-content: space-between;
 }
 
+// Styles for the right side of the header
 .page-header__right-side {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+// Styles for an active menu link
 .menu__link--active {
   position: relative;
   color: getColor("button-primary");
@@ -35,10 +39,12 @@
   }
 }
 
+// Styles for each item in the contact list
 .contact-list__item {
   display: flex;
 }
 
+// Styles for each link in the contact list
 .contact-list__link {
   display: flex;
   text-decoration: none;
@@ -55,6 +61,7 @@
   }
 }
 
+// Styles for each icon in the contact list
 .contact-list__icon {
   margin-right: 10px;
   margin-left: 0;
@@ -73,6 +80,7 @@
   }
 }
 
+// Styles for the button to open the menu
 .js-open-menu {
   width: 40px;
   height: 40px;
@@ -95,6 +103,7 @@
   }
 }
 
+// Media query for screens up to 481px
 @media screen and (max-width: 481px) {
   .menu {
     display: none;
@@ -104,6 +113,7 @@
   }
 }
 
+// Media query for screens from 481px and up
 @media screen and (min-width: 481px) {
   .menu {
     display: flex;
@@ -150,6 +160,7 @@
   }
 }
 
+// Media query for screens from 769px and up
 @media screen and (min-width: 769px) {
   .contact-list {
     display: flex;
@@ -171,6 +182,7 @@
   }
 }
 
+// Media query for screens from 1201px and up
 @media screen and (min-width: 1201px) {
   .menu {
     width: 254px;

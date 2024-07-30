@@ -1,5 +1,6 @@
 @import "./../utils/vars.scss";
 
+// Main container for the team section
 .team {
   background-color: getColor("background-tertiary");
   padding-bottom: 94px;
@@ -26,6 +27,7 @@
   }
 }
 
+// Individual team member card
 .team__item {
   background-color: getColor("background-quaternary");
   width: calc(100% - 30px);
@@ -49,6 +51,7 @@
   }
 }
 
+// Container for social media icons
 .team__icons-list {
   display: flex;
   width: 206px;
@@ -59,6 +62,7 @@
   padding-bottom: 18px;
 }
 
+// Individual icon in the social media list
 .team__icons-item {
   display: inline-flex;
   width: 44px;
@@ -80,6 +84,7 @@
   }
 }
 
+// Icon styling within the social media list
 .team__icon {
   margin-top: 12px;
   fill: getColor("icon-inert");
@@ -87,6 +92,7 @@
   transition: 25ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+// Media query for screens 481px and above
 @media (min-width: 481px) {
   .team__list {
     display: flex;
@@ -99,6 +105,7 @@
   }
 }
 
+// Media query for screens 769px and above
 @media (min-width: 769px) {
   .team__list {
     flex-wrap: nowrap;

@@ -1,5 +1,6 @@
 @import "./../utils/vars.scss";
 
+// Container for the mobile menu, hidden by default
 .js-menu-container {
   position: fixed;
   top: 0;
@@ -15,15 +16,18 @@
   justify-content: space-between;
 }
 
+// Class to open the menu
 .is-open {
   transform: translateX(0);
 }
 
+// Classes for open/close menu buttons
 .js-close-menu,
 .js-open-menu {
   cursor: pointer;
 }
 
+// Close menu button styles
 .js-close-menu {
   position: absolute;
   background-color: white;
@@ -43,12 +47,14 @@
   }
 }
 
+// Close menu icon styles
 .js-close-menu__icon {
   width: 18px;
   height: 18px;
   fill: getColor("font-header");
 }
 
+// Mobile menu styles
 .mobile-menu {
   padding-top: 48px;
   padding-left: 40px;
@@ -69,10 +75,12 @@
   }
 }
 
+// Bottom section of the menu container
 .js-menu-container__bottom {
   padding-left: 40px;
 }
 
+// Mobile contact list styles
 .mobile-contact-list {
   margin-bottom: 64px;
 
@@ -95,10 +103,12 @@
   }
 }
 
+// Social media section styles
 .js-menu-container__social-media {
   margin-bottom: 48px;
 }
 
+// Link styles within the menu container
 .js-menu-container__link {
   color: getColor("button-primary");
 }

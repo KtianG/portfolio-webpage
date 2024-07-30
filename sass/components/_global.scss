@@ -1,5 +1,6 @@
 @import "./../utils/vars.scss";
 
+// Universal selector for basic element styling
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +11,7 @@
   transition: 100ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+// Body element styling
 body {
   font-family: "Roboto", sans-serif;
   color: getColor("font-text");
@@ -18,16 +20,19 @@ body {
   letter-spacing: 0.03em;
 }
 
+// Heading elements styling
 h2,
 h3 {
   color: getColor("font-header");
 }
 
+// Anchor (link) element styling
 a {
   text-decoration: none;
   color: inherit;
 }
 
+// H2 heading specific styling
 h2 {
   font-size: 36px;
   text-align: center;
@@ -35,22 +40,19 @@ h2 {
   padding-bottom: 50px;
 }
 
+// Container class styling for centering content
 .container {
   width: 100%;
   margin: 0 auto;
 }
 
+// Class for elements that are in progress or hidden
 .in_progress {
   display: none;
   visibility: hidden;
 }
 
-@media (min-width: 481px) {
-}
-
-@media (min-width: 769px) {
-}
-
+// Media query for screens with a minimum width of 1201px
 @media (min-width: 1201px) {
   .container {
     width: 1200px;

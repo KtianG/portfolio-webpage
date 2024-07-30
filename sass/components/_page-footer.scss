@@ -1,31 +1,37 @@
 @import "./../utils/vars.scss";
 
+// Main container for the page footer
 .page-footer {
   background-color: getColor("background-secondary");
   text-align: center;
 }
 
+// Container for the columns list within the footer
 .page-footer__columns-list {
   padding-top: 60px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+// Styles for the address section in the footer
 .page-footer__address {
   color: white;
   font-style: normal;
   padding-bottom: 60px;
 }
 
+// Styles for the contact list within the footer
 .page-footer__contact-list {
   color: getColor("font-footer-contact");
   padding-top: 9px;
 }
 
+// Styles for each contact item in the contact list
 .page-footer__contact-item:not(:last-child) {
   padding-bottom: 9px;
 }
 
+// Styles for links in the footer
 .page-footer__link {
   text-decoration: none;
   color: getColor("font-footer-contact");
@@ -36,18 +42,21 @@
   }
 }
 
+// Styles for the title in the footer
 .page-footer__title {
   color: white;
   font-size: 14px;
   margin-bottom: 20px;
 }
 
+// Styles for the follow us section in the footer
 .follow-us {
   display: flex;
   justify-content: center;
   padding-bottom: 60px;
 }
 
+// Styles for each item in the follow us section
 .follow-us__item {
   display: inline-flex;
   width: 44px;
@@ -79,17 +88,20 @@
   }
 }
 
+// Styles for the follow us icon
 .follow-us__icon {
   margin-top: 12px;
   fill: white;
 }
 
+// Styles for the subscribe section in the footer
 .subscribe {
   display: flex;
   flex-direction: column;
   padding-bottom: 60px;
 }
 
+// Styles for the input field in the subscribe section
 .subscribe__input {
   width: 100%;
   height: 50px;
@@ -104,6 +116,7 @@
   border-radius: 4px;
 }
 
+// Media query for screens wider than 481px
 @media (min-width: 481px) {
   .page-footer__columns-list {
     display: flex;
@@ -116,6 +129,7 @@
   }
 }
 
+// Media query for screens wider than 769px
 @media (min-width: 769px) {
   .page-footer {
     text-align: left;
@@ -155,6 +169,7 @@
   }
 }
 
+// Media query for screens wider than 1201px
 @media (min-width: 1201px) {
   .subscribe__input {
     width: 358px;

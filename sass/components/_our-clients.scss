@@ -1,10 +1,12 @@
 @import "./../utils/vars.scss";
 
+// Styles for the title of the "Our Clients" section
 .our-clients__title {
   padding-top: 60px;
   padding-bottom: 30px;
 }
 
+// Styles for the list of clients
 .our-clients__list {
   padding-bottom: 60px;
   padding-right: 15px;
@@ -15,6 +17,7 @@
   justify-content: space-between;
 }
 
+// Styles for each client item
 .our-clients__item {
   width: calc(50% - 15px);
   height: 92px;
@@ -42,16 +45,19 @@
   }
 }
 
+// Styles for the client logo
 .our-clients__logo {
   fill: getColor("icon-inert");
 }
 
+// Media query for screens wider than 481px
 @media (min-width: 481px) {
   .our-clients__item {
     width: calc(33% - 20px);
   }
 }
 
+// Media query for screens wider than 769px
 @media (min-width: 769px) {
   .our-clients__title {
     padding-top: 94px;

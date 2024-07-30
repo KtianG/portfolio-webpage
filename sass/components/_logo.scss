@@ -1,5 +1,6 @@
 @import "./../utils/vars.scss";
 
+// Base styling for the logo class
 .logo {
   text-decoration: none;
   color: black;
@@ -12,16 +13,19 @@
   }
 }
 
+// Styling for the logo in the header
 .logo--header {
   color: getColor("logo-primary");
 }
 
+// Styling for the logo in the footer
 .logo--footer {
   padding-bottom: 20px;
   color: white;
   text-align: center;
 }
 
+// Media query for screens with a minimum width of 769px
 @media (min-width: 769px) {
   .logo {
     font-size: 26px;

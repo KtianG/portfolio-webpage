@@ -1,5 +1,6 @@
 @import "./../utils/vars.scss";
 
+// Base button styles
 .button {
   font-family: inherit;
   font-size: 1em;
@@ -21,6 +22,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+// Styles for buttons in the banner section
 .banner__button {
   @extend .button;
 
@@ -32,6 +34,7 @@
   }
 }
 
+// Styles for subscribe button
 .subscribe__button {
   @extend .button;
 
@@ -54,6 +57,7 @@
   }
 }
 
+// Styles for modal submit button
 .modal__button-submit {
   @extend .button;
   margin-top: 30px;
@@ -70,6 +74,7 @@
   }
 }
 
+// Styles for modal close button
 .modal__button-close {
   position: absolute;
   background-color: white;
@@ -92,6 +97,7 @@
   }
 }
 
+// Styles for close icon inside modal close button
 .modal__icon-close {
   width: 18px;
   height: 18px;
@@ -99,6 +105,7 @@
   fill: getColor("font-header");
 }
 
+// Styles for filter buttons
 .filters__button {
   font-family: inherit;
   background-color: getColor("background-tertiary");
@@ -127,6 +134,7 @@
   }
 }
 
+// Media query for screens wider than 769px
 @media (min-width: 769px) {
   .subscribe__button {
     align-self: flex-end;
